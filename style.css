@@ -1,0 +1,563 @@
+/*Estilos gerais*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(57, 96, 122);
+}
+
+h1, h2, h3{
+    font-family: 'Montserrat';
+}
+
+h1{
+    margin-top: 0;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 3px #111111;
+}
+
+p{
+    text-shadow: 1px 1px 1px #111111;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Cabeçalho e menu*/
+.top-bar-container{
+    min-width: 100%;
+    margin: 0 auto;
+    background: rgb(39, 76, 100);
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 14px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.top-bar{
+    background: rgb(39, 76, 100);
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.cabecalho{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header{
+    background-color: rgb(57, 96, 122);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    
+}
+
+#menu a{
+    color: white;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-shadow: 1px, 1px black;
+    border-radius: 20px;
+    font-size: large;
+}
+
+#menu a:hover{
+    background-color:rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+/*Parte principal*/
+#principal1{
+     margin-top: 100px;
+    background-image: url(backgroundok.png);
+    background-size: cover;
+    background-position: center center;
+    font-size: xx-large;
+    padding: 0 30px;
+    min-height: 100vh;
+    color: white;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#principal1 a{
+    color: white;
+}
+
+/*Home*/
+
+#content{
+    background: rgb(57, 96, 122);
+    padding: 60px 20px;
+}
+
+.content-container{
+    font-family: 'Roboto', sans-serif;
+    max-width: auto;
+    color: #f0f0f0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.content-coluna-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    margin-top: 30px;
+    padding-bottom: 80px;
+    border-top: solid #aed6f1;
+    border-bottom: solid #aed6f1;
+}
+
+.content-coluna{
+    width: 50%;
+}
+
+.content-container strong{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.content-container ul, .content-container ol{
+    padding-left: 25px;
+}
+
+.content-container a{
+    color: #aed6f1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.content-container a:hover{
+    text-decoration: underline;
+}
+
+.cards{
+    padding: 50px 20px;
+    background-color: rgb(57, 96, 122);
+    text-align: center;
+}
+
+.containerclass{
+    margin: 0 auto;   
+}
+
+.cards h2{
+    font-family: 'Montserrat', sans-serif;
+    color: blue;
+    margin-bottom: 15px;
+}
+
+.subtitulo{
+    font-size: xx-large;
+    color: white;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.containerclass{
+    font-size: x-large;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.containercard{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: rgba(226, 226, 226, 0.363);
+    border-radius: 15px;
+    padding: 35px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px 10px;
+    margin-bottom: 30px;
+}
+
+.card:hover{
+    transform: translateY(5px);
+    box-shadow: 0 10px 30px black;
+}
+
+.card h3{
+    color: rgb(49, 93, 122);
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.card p{
+    color: #555;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-bottom: 15px;
+    text-shadow: none;
+}
+
+.card-button{
+    background-color: rgb(49, 93, 122);
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    align-self: center;
+    width: 85%;
+    display: inline-block;
+}
+
+.card-button:hover{
+    background: rgb(39, 76, 100);
+}
+
+#effect{
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 90px 30px;
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    clear: both;
+}
+
+.servico-item{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.servico-texto{
+    width: 60%;
+    padding-right: 30px;
+    padding-left: 40px;
+}
+
+.servico-imagem{
+    width: 40%;
+}
+
+.imagem-servico{
+    max-width: 500px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 90%;
+    margin: 25px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.50);
+    clear: both;
+}
+
+figcaption{
+    color: #a0a0a0;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/*Equipe*/
+.title{
+    background-color: rgba(0, 0, 0, 0.60);
+    padding: 70px 30px;
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title h1{
+    font-size: 50px;
+
+}
+
+.subtitulo-equipe{
+    color: white;
+    padding-top: 15px;
+    font-family: 'Roboto';
+    font-size: 30px;
+}
+
+.subtitulo-equipe a{
+    color: white;
+}
+
+.subtitulo-equipe a:hover{
+    font-weight: bolder;
+}
+
+.equipe-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.equipe{
+    padding: 50px, 15px;
+    background-color: rgb(57, 96, 122);
+    text-align: center;
+}
+
+.equipe h2{
+    color: white;
+    font-size: 44px;
+    text-shadow: 2px, 2px, 2px, black;
+    margin-top: 20px;
+}
+
+.subtitulo-equipe{
+    font-size: large;
+}
+
+.cargo-titulo{
+    color: white;
+    font-size: 35px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #aed6f1;
+}
+.equipe-cards{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.equipe-card{
+    background-color: rgba(15, 15, 161, 0.377);
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.equipe-card:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.equipe-card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 3px solid #aed6f1;
+    margin-bottom: 10px;
+}
+
+.equipe-info{
+    text-align: center;
+}
+
+.equipe-info h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.equipe-info p{
+    color: #a0a0a0cc;
+    font-size: 16px;
+}
+/*Consulta*/
+.addapt{
+    line-height: 1.6;
+    min-width: 80%;
+}
+
+.agendamento{
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.agendamento >li{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.agendamento ul{
+    padding-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+/*Tabela - Formas de Contato*/
+table{
+    margin: 50px 0;
+    min-width: 50%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-spacing: 0;
+    padding:0 10px
+}
+
+tr:hover{
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 20px;
+    cursor: context-menu;
+}
+
+/*Rodapé*/
+footer{
+    padding: 0 30px;
+    text-align: center;  
+    color: white;
+    background-color: rgb(49, 93, 122);
+    min-height: 90px;
+}
+
+/*Responsividade*/
+@media screen and (max-width: 768px){
+    body{
+        font-size: 14px;
+        padding: 0px;
+    }
+
+    /*Cabeçalho e menu*/
+    .cabecalho{
+        position: static;
+        margin-bottom: 0;
+    }
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    header img{
+        width: 80px;
+        height: 80px;
+    }
+
+    #menu{
+        text-align: center;
+        width: 100%;
+    }
+
+    #menu a{
+        padding: 8px 5px;
+        display: block;
+    }
+
+    /*Principal*/
+    #principal1 {
+        margin-top: 0;
+        padding: 40px 15px;
+        min-height: auto;
+    }
+
+    #effect{
+        padding: 40px, 15px;
+        font-size: 14px;
+    }
+    #effect, .title {
+        padding: 30px 15px;
+        width: 100%;
+    }
+    /*Títulos*/
+    h1, .title h1 {
+        font-size: 1.8rem;
+    }
+    
+    .equipe h2 {
+        font-size: 1.6rem;
+    }
+
+    .cargo-titulo {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    /*Home*/
+    .content-coluna-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .content-coluna {
+        width: 100%;
+    }
+
+    .containercard {
+        gap: 30px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    /*Serviços*/
+    .servico-item {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .servico-texto, .servico-imagem {
+        width: 90%;
+        padding: 0;
+    }
+
+    /*Equipe*/
+    .subtitulo-equipe{
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .equipe-card {
+        width: 45%;
+        padding: 15px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    .equipe-card img{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .equipe-info h3{
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+
+    .equipe-info p{
+        font-size: 12px;
+    }
+
+    footer{
+        font-size: 10px;
+        padding: 15px;
+    }
+}
